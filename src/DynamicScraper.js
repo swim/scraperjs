@@ -36,7 +36,10 @@ var DynamicScraper = function(options) {
 	 */
 	this.options = {
 		onStdout: function() {},
-		onStderr: function() {}
+		onStderr: function() {},
+        dnodeOpts: {
+            weak: false
+        }
 	};
 	for (var key in options) { this.options[key] = options[key]; }
 };

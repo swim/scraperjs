@@ -38,7 +38,10 @@ var PhantomPoll = function() {
 	 */
 	this.options = {
 		onStdout: function() {},
-		onStderr: function() {}
+		onStderr: function() {},
+        dnodeOpts: {
+            weak: false
+        }
 	};
 	/**
 	 * List of functions waiting to be called after the PhantomJS
